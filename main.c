@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int add(int a, int b){
-  return 2*a+b;
+  return a+b;
 }
 
 int main(int argc, char **argv){
