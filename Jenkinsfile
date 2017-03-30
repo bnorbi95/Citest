@@ -2,17 +2,17 @@ pipeline{
   agent any
   stages{
     stage('Checkout'){
-      step{
+      steps{
         checkout scm
       }
     }
     stage('Build'){
-      step{
+      steps{
         sh 'gcc -o main main.c'
       }
     }
     stage('Run'){
-      step{
+      steps{
         sh './main'
       }
     }
