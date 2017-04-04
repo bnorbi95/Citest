@@ -1,5 +1,7 @@
 language: c
 install: true
 script:
-  - gcc -o main main.c
-  - ./main
+  - make
+after_succes:
+  - echo "Running project:"
+  - ./my_output
