@@ -3,5 +3,5 @@ install: true
 script:
   - make
 after_succes:
-  - echo "Running project:"
+  - echo $TRAVIS_TEST_RESULT
   - ./my_output
