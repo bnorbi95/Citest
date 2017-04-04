@@ -2,6 +2,6 @@ language: c
 install: true
 script:
   - make
-after_succes:
+after_success:
   - echo $TRAVIS_TEST_RESULT
   - ./my_output
