@@ -1,9 +1,9 @@
 pipeline{
-  agent any
+  agent worker1
   stages{
     stage('Build'){
       steps{
-        sh 'gcc -o main main.c'
+        sh 'make'
       }
     }
     stage('Run'){
